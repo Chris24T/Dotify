@@ -1,4 +1,4 @@
-# Project Dotify - a Spotify clone
+# Dotify - a Spotify clone
 
 React.js Music Application. 
 

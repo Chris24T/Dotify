@@ -5,7 +5,7 @@ import { useGetTopChartsQuery } from '../redux/services/shazamCore';
 
 const TopArtists = () => {
   const { data, isFetching, error } = useGetTopChartsQuery();
-  console.log('top artists ', data);
+
   if (isFetching) return <Loader title="Loading artists..." />;
 
   if (error) return <Error />;
@@ -20,7 +20,6 @@ const TopArtists = () => {
         {data?.map((track) => (
           <ArtistCard key={track.key} track={track} />
         ))}
-        <div>Hello</div>
       </div>
     </div>
   );

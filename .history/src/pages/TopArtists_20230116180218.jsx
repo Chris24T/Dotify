@@ -20,7 +20,6 @@ const TopArtists = () => {
         {data?.map((track) => (
           <ArtistCard key={track.key} track={track} />
         ))}
-        <div>Hello</div>
       </div>
     </div>
   );
